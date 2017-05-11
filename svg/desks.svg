@@ -1,0 +1,102 @@
+<svg viewbox="0 0 1000 500">
+	<g id="1">
+		<path d="M 120 10 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="120" y="10" dominant-baseline="hanging">Desk1</text>
+	</g>
+	<g id="2">
+		<path d="M 120 70 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="120" y="70" dominant-baseline="hanging">Desk2</text>
+	</g>
+	<g id="3">
+		<path d="M 120 120 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="120" y="120" dominant-baseline="hanging">Desk3</text>
+	</g>
+	<g id="4">
+		<path d="M 120 170 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="120" y="170" dominant-baseline="hanging">Desk4</text>
+	</g>
+	<g id="5">
+		<path d="M 120 230 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="120" y="230" dominant-baseline="hanging">Desk5</text>
+	</g>
+	<g id="6">
+		<path d="M 230 10 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="230" y="10" dominant-baseline="hanging">Desk6</text>
+	</g>
+	<g id="7">
+		<path d="M 230 60 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="230" y="60" dominant-baseline="hanging">Desk7</text>
+	</g>
+	<g id="8">
+		<path d="M 230 120 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="230" y="120" dominant-baseline="hanging">Desk8</text>
+	</g>
+	<g id="9">
+		<path d="M 230 170 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="230" y="170" dominant-baseline="hanging">Desk9</text>
+	</g>
+	<g id="10">
+		<path d="M 340 10 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="340" y="10" dominant-baseline="hanging">Desk10</text>
+	</g>
+	<g id="11">
+		<path d="M 340 70 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="340" y="70" dominant-baseline="hanging">Desk11</text>
+	</g>
+	<g id="12">
+		<path d="M 340 120 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="340" y="120" dominant-baseline="hanging">Desk12</text>
+	</g>
+	<g id="13">
+		<path d="M 340 170 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="340" y="170" dominant-baseline="hanging">Desk13</text>
+	</g>
+	<g id="14">
+		<path d="M 340 230 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="340" y="230" dominant-baseline="hanging">Desk14</text>
+	</g>
+	<g id="15">
+		<path d="M 450 10 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="450" y="10" dominant-baseline="hanging">Desk15</text>
+	</g>
+	<g id="16">
+		<path d="M 450 70 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="450" y="70" dominant-baseline="hanging">Desk16</text>
+	</g>
+	<g id="17">
+		<path d="M 450 120 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="450" y="120" dominant-baseline="hanging">Desk17</text>
+	</g>
+	<g id="18">
+		<path d="M 450 170 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="450" y="170" dominant-baseline="hanging">Desk18</text>
+	</g>
+	<g id="19">
+		<path d="M 450 230 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="450" y="230" dominant-baseline="hanging">Desk19</text>
+	</g>
+	<g id="20">
+		<path d="M 560 10 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="560" y="10" dominant-baseline="hanging">Desk20</text>
+	</g>
+	<g id="21">
+		<path d="M 560 60 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="560" y="60" dominant-baseline="hanging">Desk21</text>
+	</g>
+	<g id="22">
+		<path d="M 560 120 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="560" y="120" dominant-baseline="hanging">Desk22</text>
+	</g>
+	<g id="23">
+		<path d="M 560 170 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="560" y="170" dominant-baseline="hanging">Desk23</text>
+	</g>
+	<g id="24">
+		<path d="M 10 450 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="10" y="450" dominant-baseline="hanging">Desk24</text>
+	</g>
+	<g id="25">
+		<path d="M 110 450 h 100 v 50 h -100 Z" stroke="#000" storke-width="2" fill="#FFF" />
+		<text x="110" y="450" dominant-baseline="hanging">Desk25</text>
+	</g>
+</svg>

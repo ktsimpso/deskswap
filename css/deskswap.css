@@ -1,0 +1,68 @@
+html, body, div {
+	margin: 0;
+	padding: 0;
+	display: border-box;
+}
+
+button {
+	cursor: pointer;
+	padding: 5px 20px;
+}
+
+button:disabled {
+	cursor: auto;
+}
+
+textarea {
+	height: 420px;
+}
+
+#container {
+	display: flex;
+	flex-direction: column;
+}
+
+#main {
+	display: flex;
+}
+
+#buttons {
+	display: flex;
+	justify-content: space-around;
+}
+
+#desks {
+	flex-grow: 1;
+}
+
+#desks .available path {
+	fill: rgb(0, 255, 0);
+	cursor: pointer;
+}
+
+#desks .selected path {
+	stroke: rgb(0, 0, 255);
+	stroke-width: 4;
+}
+
+#personList div {
+	position: relative;
+	padding: 5px 20px 5px 30px;
+}
+
+#personList .complete {
+	color: #CCC;
+}
+
+#personList .selected::before {
+	position: absolute;
+	content: ' ';
+	font-size: 0;
+	width: 0;
+	height: 0;
+	border-left: 10px solid blue;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	left: 10px;
+	top: 7px;
+}

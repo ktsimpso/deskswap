@@ -1,0 +1,118 @@
+{
+	"1": {
+		"adjacentDesks": []
+	},
+	"2": {
+		"adjacentDesks": [
+			"3"
+		]
+	},
+	"3": {
+		"adjacentDesks": [
+			"2",
+			"4"
+		]
+	},
+	"4": {
+		"adjacentDesks": [
+			"3"
+		]
+	},
+	"5": {
+		"adjacentDesks": []
+	},
+	"6": {
+		"adjacentDesks": [
+			"7"
+		]
+	},
+	"7": {
+		"adjacentDesks": [
+			"6"
+		]
+	},
+	"8": {
+		"adjacentDesks": [
+			"9"
+		]
+	},
+	"9": {
+		"adjacentDesks": [
+			"8"
+		]
+	},
+	"10": {
+		"adjacentDesks": []
+	},
+	"11": {
+		"adjacentDesks": [
+			"12"
+		]
+	},
+	"12": {
+		"adjacentDesks": [
+			"11",
+			"13"
+		]
+	},
+	"13": {
+		"adjacentDesks": [
+			"12"
+		]
+	},
+	"14": {
+		"adjacentDesks": []
+	},
+	"15": {
+		"adjacentDesks": []
+	},
+	"16": {
+		"adjacentDesks": [
+			"17"
+		]
+	},
+	"17": {
+		"adjacentDesks": [
+			"16",
+			"18"
+		]
+	},
+	"18": {
+		"adjacentDesks": [
+			"17"
+		]
+	},
+	"19": {
+		"adjacentDesks": []
+	},
+	"20": {
+		"adjacentDesks": [
+			"21"
+		]
+	},
+	"21": {
+		"adjacentDesks": [
+			"20"
+		]
+	},
+	"22": {
+		"adjacentDesks": [
+			"23"
+		]
+	},
+	"23": {
+		"adjacentDesks": [
+			"22"
+		]
+	},
+	"24": {
+		"adjacentDesks": [
+			"25"
+		]
+	},
+	"25": {
+		"adjacentDesks": [
+			"24"
+		]
+	}
+}
