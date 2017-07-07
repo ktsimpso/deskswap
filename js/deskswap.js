@@ -1,36 +1,30 @@
 (() => {
 	var container = document.getElementById('container'),
-		PersonDesks = class {
-			constructor() {
-				this.deskToPerson = {};
-				this.personToDesk = {};
-			}
-			getPersonFromDesk(desk) {
-				return this.deskToPerson[desk];
-			}
-			getDeskFromPerson(person) {
-				return this.personToDesk[person];
-			}
-			add(person, desk) {
-				this.deskToPerson[desk] = person;
-				this.personToDesk[person] = desk;
-				return this;
-			}
-			getDesks() {
-				return Object.keys(this.deskToPerson);
-			}
-			getPeople() {
-				return Object.keys(this.personToDesk);
-			}
-			hasPerson(person) {
-				return this.personToDesk.hasOwnProperty(person);
-			}
-			hasDesk(desk) {
-				return this.deskToPerson.hasOwnProperty(desk);
-			}
-			toJson() {
-				return JSON.stringify(this.personToDesk, null, '\t');
-			}
+		PersonDesks = () => {
+			var deskToPerson = {},
+				personToDesk = {},
+				self = {
+				getPersonFromDesk: (desk) =>
+					deskToPerson[desk],
+				getDeskFromPerson: (person) =>
+					personToDesk[person],
+				add: (person, desk) => {
+					deskToPerson[desk] = person;
+					personToDesk[person] = desk;
+					return self;
+				},
+				getDesks: () =>
+					Object.keys(deskToPerson),
+				getPeople: () =>
+					Object.keys(personToDesk),
+				hasPerson: (person) =>
+					personToDesk.hasOwnProperty(person),
+				hasDesk: (desk) =>
+					deskToPerson.hasOwnProperty(desk),
+				toJson: () =>
+					JSON.stringify(personToDesk, null, '\t')
+			};
+			return self;
 		},
 		clearElement = (element) => {
 			while(element.firstChild) {
@@ -231,8 +225,8 @@ ${personDesksNew.getPeople().map((person) => `${person},${personDesksOld.getDesk
 			var [desks, personToDeskOld, deskMap] = results,
 				personDesksOld = Object.keys(personToDeskOld).reduce((personDesks, person) =>
 					personDesks.add(person, personToDeskOld[person])
-					, new PersonDesks()),
-				personDesksNew = new PersonDesks(),
+					, PersonDesks()),
+				personDesksNew = PersonDesks(),
 				shuffledPeoplePromise = shufflePeople(personDesksOld.getPeople().slice()),
 				selectDesks = () => 
 					shuffledPeoplePromise.then((shuffledPeople) =>
