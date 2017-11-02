@@ -17,9 +17,9 @@ var container = document.getElementById('container'),
 
 Promise.all([deskPositions, peopleLocations, deskMap])
 	.then((results) => {
-		var [desks, personToDeskOld, deskMap] = results,
-			personDesksOld = Object.keys(personToDeskOld).reduce((personDesks, person) =>
-				personDesks.add(person, personToDeskOld[person])
+		var [desks, people, deskMap] = results,
+			personDesksOld = Object.keys(people).reduce((personDesks, person) =>
+				personDesks.add(person, people[person].desk)
 				, PersonDesks()),
 			personDesksNew = PersonDesks(),
 			shuffledPeoplePromise = shufflePeople(personDesksOld.getPeople().slice(), container),
@@ -30,7 +30,7 @@ Promise.all([deskPositions, peopleLocations, deskMap])
 							!personDesksNew.hasPerson(person))
 						.reduce((chain, person) =>
 							chain.then((desk) =>
-								renderDesks(deskMap, desks, personDesksOld, personDesksNew, person, shuffledPeople, container))
+								renderDesks(deskMap, desks, personDesksOld, personDesksNew, person, shuffledPeople, people, container))
 						, Promise.resolve())
 						.then(() =>
 							personDesksOld.getPeople().length > personDesksNew.getPeople().length ?

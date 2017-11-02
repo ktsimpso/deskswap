@@ -1,7 +1,7 @@
 import clearElement from '/js/utils/clearElement.js';
 import getPossibleDesks from '/js/getPossibleDesks.js';
 
-export default (deskMap, desks, personDesksOld, personDesksNew, person, shuffledPeople, container) =>
+export default (deskMap, desks, personDesksOld, personDesksNew, person, shuffledPeople, people, container) =>
 	new Promise((resolve) => {
 		var onDeskClick = (event) => {
 				var target = event.target,
@@ -70,7 +70,7 @@ export default (deskMap, desks, personDesksOld, personDesksNew, person, shuffled
 			document.querySelector(`[id='${personDesksNew.getDeskFromPerson(person)}'] text`).textContent = person;
 		});
 
-		getPossibleDesks(desks, personDesksOld, personDesksNew, person).forEach((desk) => {
+		getPossibleDesks(desks, personDesksOld, personDesksNew, person, people).forEach((desk) => {
 			document.querySelector(`[id='${desk}']`).classList.add('available');
 		});
 

@@ -1,8 +1,10 @@
-export default (deskPositions, personDesksOld, personDesksNew, person) => {
+export default (deskPositions, personDesksOld, personDesksNew, person, people) => {
 	var filterNewAssignments = (desk) =>
 			!personDesksNew.hasDesk(desk),
 		filterOldDesks = (desk) =>
 			desk !== personDesksOld.getDeskFromPerson(person),
+		filterDeskGroup = (desk) =>
+			deskPositions[desk].group === people[person].group,
 		filterPreviousNeighbors = (desk) =>
 			!deskPositions[personDesksOld.getDeskFromPerson(person)].adjacentDesks
 				.map((desk) =>
@@ -21,6 +23,7 @@ export default (deskPositions, personDesksOld, personDesksNew, person) => {
 				.hasOwnProperty(desk),
 		filters = [
 			filterNewAssignments,
+			filterDeskGroup,
 			filterOldDesks,
 			filterPreviousNeighbors,
 		]
